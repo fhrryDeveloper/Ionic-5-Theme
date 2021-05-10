@@ -1,9 +1,43 @@
-<ion-header>
+<ion-header class="ion-no-border">
   <ion-toolbar>
-    <ion-title>introduce</ion-title>
+    <ion-buttons slot="end">
+      <ion-button>skip</ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <h1>Introduce</h1>
+  <ion-slides>
+
+    <ion-slide>
+      <div class="slide">
+        <img src="../../assets/walkthrough/walkthrough-illustration-1.svg" />
+        <h2>Welcome</h2>
+        <p>The <b>ionic conference app</b> is a practical preview of the ionic framework in action, and a demonstration of
+          proper code use.</p>
+      </div>
+    </ion-slide>
+
+    <ion-slide>
+      <img src="../../assets/walkthrough/walkthrough-illustration-2.svg" />
+      <h2>What is Ionic?</h2>
+      <p><b>Ionic Framework</b> is an open source SDK that enables developers to build high quality mobile apps with web
+        technologies like HTML, CSS, and JavaScript.</p>
+    </ion-slide>
+
+    <ion-slide>
+      <img src="../../assets/walkthrough/walkthrough-illustration-3.svg" />
+      <h2>What is Appflow?</h2>
+      <p><b>Appflow</b> is a powerful set of services and features built on top of Ionic Framework that brings a totally
+        new level of app development agility to mobile dev teams.</p>
+    </ion-slide>
+
+    <ion-slide>
+      <img src="../../assets/walkthrough/walkthrough-illustration-4.svg" />
+      <h2>Ready to Play?</h2>
+      <ion-button fill="clear">Continue <ion-icon slot="end" name="arrow-forward"></ion-icon>
+      </ion-button>
+    </ion-slide>
+
+  </ion-slides>
 </ion-content>
