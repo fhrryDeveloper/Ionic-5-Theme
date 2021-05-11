@@ -6,6 +6,10 @@ ion-toolbar {
   --background: #c1ebff;
 }
 
+.slide {
+  background: #c1ebff;
+}
+
 .info-title {
   margin: 0px;
   margin-bottom: var(--page-margin);
@@ -24,6 +28,7 @@ ion-toolbar {
 
 .svg-background {
   --page-background: white;
+  background: white;
 }
 
 .swiper-slide {
@@ -60,12 +65,8 @@ p b {
   background: #c1ebff !important;
 }
 
-.first-slide {
-  background-color: #c1ebff;
-}
-
 .vector-decoration {
-  fill: currentColor;
+  fill: #c1ebff;
   color: var(--page-vector-decoration-fill);
   background-color: var(--page-background);
   padding-bottom: 4px;
