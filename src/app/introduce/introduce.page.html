@@ -1,16 +1,16 @@
 <ion-header class="ion-no-border">
   <ion-toolbar>
     <ion-buttons slot="end">
-      <ion-button>skip</ion-button>
+      <ion-button class="white-font">skip</ion-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-slides>
+  <ion-slides class="introduce-slides" pager="true">
 
     <ion-slide>
-      <div class="slide">
+      <div class="first-slide">
         <img src="../../assets/walkthrough/walkthrough-illustration-1.svg" />
         <div class="svg-background">
           <svg class="vector-decoration" version="1.1" xmlns="http://www.w3.org/2000/svg"
@@ -18,32 +18,32 @@
             style="enable-background:new 0 0 90 20;" xml:space="preserve" preserveAspectRatio="none">
             <path d="M0 0 V5 H5 C25 5 25 20 45 20 S65 5 85 5 H90 V0 Z" />
           </svg>
-          <h2>This App is built with Ionic 5</h2>
+          <h3>This App is built with Ionic 5</h3>
           <p class="info-paragraph ion-text-left">
-            It was created by the <b>IonicThemes</b> team to help<br /> you jump start your Ionic app development.
+            <br />It was created by the <b>IonicThemes</b> team to help<br /> you jump start your Ionic app development.
           </p>
           <p class="info-paragraph ion-text-left">
-            <b>You will love Ionic 5, and if you get lost,<br/> remember we have lots of tutorials to help you.</b>
+            <br/> <b>You will love Ionic 5, and if you get lost,<br/> remember we have lots of tutorials to help you.</b>
           </p>
         </div>
       </div>
     </ion-slide>
 
-    <ion-slide>
+    <ion-slide class="second-slide">
       <img src="../../assets/walkthrough/walkthrough-illustration-2.svg" />
       <h2>What is Ionic?</h2>
       <p><b>Ionic Framework</b> is an open source SDK that enables developers to build high quality mobile apps with web
         technologies like HTML, CSS, and JavaScript.</p>
     </ion-slide>
 
-    <ion-slide>
+    <ion-slide class="third-slide">
       <img src="../../assets/walkthrough/walkthrough-illustration-3.svg" />
       <h2>What is Appflow?</h2>
       <p><b>Appflow</b> is a powerful set of services and features built on top of Ionic Framework that brings a totally
         new level of app development agility to mobile dev teams.</p>
     </ion-slide>
 
-    <ion-slide>
+    <ion-slide class="last-slide">
       <img src="../../assets/walkthrough/walkthrough-illustration-4.svg" />
       <h2>Ready to Play?</h2>
       <ion-button fill="clear">Continue <ion-icon slot="end" name="arrow-forward"></ion-icon>
