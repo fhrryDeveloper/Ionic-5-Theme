@@ -15,6 +15,7 @@ ion-slides {
 
 ion-toolbar {
   --background: transparent;
+
   ion-button {
     --color: white;
   }
@@ -50,17 +51,13 @@ ion-toolbar {
   color: var(--page-vector-decoration-fill);
   background-color: var(--page-background);
   padding-bottom: 4px;
-
-  // To prevent transparent line caused by pixel fractions
   transform: translate3d(0px, 0px, 0px);
   shape-rendering: geometricprecision;
-  height: calc(100% + 1px);
 }
 
 .info-title {
-  margin: 0px;
-  // margin-bottom: var(--page-margin);
-  color: var(--ion-color-dark);
+  text-align: left;
+  padding-left: 30px;
 }
 
 .info-paragraph {
@@ -101,7 +98,7 @@ b {
 
 p {
   padding: 0 30px;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 14px;
   line-height: 1.5;
   color: var(--ion-color-step-600, #60646b);
@@ -110,6 +107,29 @@ p {
 p b {
   color: var(--ion-text-color, #000000);
   font-weight: 700;
+}
+
+.get-started-button {
+  --background: black;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 50px;
+}
+
+.alt-call-to-action-row {
+  padding-top: 5px;
+  align-items: center;
+  justify-content: space-evenly;
+
+  .cta-leading-text {
+    color: var(--ion-color-medium);
+    font-size: 16px;
+  }
+
+  .login-button {
+    --color: var(--ion-color-danger);
+    margin: 0px;
+  }
 }
 
 .white-font {

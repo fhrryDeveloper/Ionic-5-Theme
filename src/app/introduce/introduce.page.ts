@@ -1,4 +1,4 @@
-import { Component, OnInit, HostBinding, ViewChild, AfterViewInit } from '@angular/core';
+import { Component, HostBinding, ViewChild, AfterViewInit } from '@angular/core';
 import { IonSlides, MenuController } from '@ionic/angular';
 
 @Component({
@@ -16,14 +16,14 @@ export class IntroducePage implements AfterViewInit {
 
   constructor(public menu: MenuController) { }
   // Disable side menu for this page
-  ionViewDidEnter(): void {
-    this.menu.enable(false);
-  }
+  // ionViewDidEnter(): void {
+  //   this.menu.enable(false);
+  // }
 
   // Restore to default when leaving this page
-  ionViewDidLeave(): void {
-    this.menu.enable(true);
-  }
+  // ionViewDidLeave(): void {
+  //   this.menu.enable(true);
+  // }
 
   ngAfterViewInit(): void {
     // ViewChild is set
@@ -42,6 +42,13 @@ export class IntroducePage implements AfterViewInit {
       this.slides.isEnd().then(isEnd => {
         this.isLastSlide = isEnd;
       });
+    });
+  }
+
+  skipWalkthrough(): void {
+    // skip button function
+    this.slides.length().then(length => {
+      this.slides.slideTo(length);
     });
   }
 }
