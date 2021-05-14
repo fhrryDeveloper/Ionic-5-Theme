@@ -1,0 +1,117 @@
+:host {
+  --page-margin: var(--app-broad-margin);
+  --page-background: var(--app-background-shade);
+}
+
+ion-toolbar {
+  --background: black;
+  --color: white;
+}
+
+ion-back-button {
+  color: white;
+}
+
+.auth-title {
+  color: var(--ion-color-dark);
+  font-weight: bold;
+  margin-top: 30px;
+  margin-left: 20px;
+  letter-spacing: 0.6px;
+}
+
+.login-btn {
+  --background: #878787;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.login-form {
+  margin-top: 30px;
+}
+
+.login-content {
+  --background: var(--page-background);
+  --padding-start: var(--page-margin);
+  --padding-end: var(--page-margin);
+  --padding-top: var(--page-margin);
+  --padding-bottom: var(--page-margin);
+
+  .inputs-list {
+    --ion-item-background: var(--page-background);
+
+    .input-item {
+      --padding-start: 0px;
+      --padding-end: 0px;
+      --inner-padding-end: 0px;
+    }
+
+    .error-container {
+      .error-message {
+        margin: calc(var(--page-margin) / 2) 0px;
+        display: flex;
+        align-items: center;
+        color: var(--ion-color-danger);
+        font-size: 14px;
+
+        ion-icon {
+          padding-inline-end: calc(var(--page-margin) / 2);
+        }
+      }
+    }
+  }
+
+  .login-btn {
+    margin: calc(var(--page-margin) / 2) 0px;
+  }
+
+  .other-auth-options-row {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .social-auth-options {
+    .social-auth-btn {
+      margin: 0px;
+
+      &:not(:first-child) {
+        margin-top: var(--page-margin);
+      }
+    }
+  }
+}
+
+.social-auth-btn {
+  margin: 0px;
+
+  &:not(:first-child) {
+    margin-top: var(--page-margin);
+  }
+}
+
+.options-divider {
+  color: var(--ion-color-medium);
+  margin: var(--page-margin) 0px;
+  text-align: center;
+}
+
+.forgot-btn {
+  --color: #878787;
+  margin: 0px;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.signup-btn {
+  --color: #ff0867;
+  margin: 0px;
+  position: absolute;
+  right: 0px;
+
+  &:focus {
+    outline: none;
+  }
+}

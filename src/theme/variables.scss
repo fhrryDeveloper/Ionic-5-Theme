@@ -233,3 +233,29 @@
     --ion-card-background: #1e1e1e;
   }
 }
+
+:root {
+  /* Set the font family of the entire app */
+  --ion-font-family: "Rubik", sans-serif;
+
+  --app-background: #ffffff;
+  --app-background-shade: var(--ion-background-color-step-50, #f2f2f2);
+  --app-background-alt: var(--ion-color-primary);
+  --app-background-alt-shade: var(--ion-color-primary-shade);
+
+  --app-narrow-margin: 12px;
+  --app-fair-margin: 16px;
+  --app-broad-margin: 20px;
+
+  --app-narrow-radius: 4px;
+  --app-fair-radius: 8px;
+  --app-broad-radius: 12px;
+}
+
+html.ios {
+  --app-header-height: 44px;
+}
+
+html.md {
+  --app-header-height: 56px;
+}
