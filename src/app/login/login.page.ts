@@ -40,7 +40,7 @@ export class LoginPage {
   }
   doLogin(): void {
     console.log('do Log In');
-    this.router.navigate(['app/categories']);
+    this.router.navigate(['./categories']);
   }
 
   goToForgotPassword(): void {
@@ -49,17 +49,17 @@ export class LoginPage {
 
   doFacebookLogin(): void {
     console.log('facebook login');
-    this.router.navigate(['app/categories']);
+    this.router.navigate(['./categories']);
   }
 
   doGoogleLogin(): void {
     console.log('google login');
-    this.router.navigate(['app/categories']);
+    this.router.navigate(['./categories']);
   }
 
   doTwitterLogin(): void {
     console.log('twitter login');
-    this.router.navigate(['app/categories']);
+    this.router.navigate(['./categories']);
   }
 
 }

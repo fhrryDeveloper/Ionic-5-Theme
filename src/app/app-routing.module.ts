@@ -22,6 +22,18 @@ const routes: Routes = [
   {
     path: 'getting-started',
     loadChildren: () => import('./getting-started/getting-started.module').then( m => m.GettingStartedPageModule)
+  },
+  {
+    path: 'signup',
+    loadChildren: () => import('./signup/signup.module').then( m => m.SignupPageModule)
+  },
+  {
+    path: 'forgot-password',
+    loadChildren: () => import('./forgot-password/forgot-password.module').then( m => m.ForgotPasswordPageModule)
+  },
+  {
+    path: 'categories',
+    loadChildren: () => import('./categories/categories.module').then( m => m.CategoriesPageModule)
   }
 ];
 @NgModule({

@@ -27,6 +27,30 @@ ion-back-button {
   margin-top: 20px;
 }
 
+.facebook-auth-btn {
+  background: #3b5998;
+  border-radius: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.google-auth-btn {
+  background: #cc181e;
+  border-radius: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.twitter-auth-btn {
+  background: #00aced;
+  border-radius: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
 .login-form {
   margin-top: 30px;
 }
@@ -69,24 +93,6 @@ ion-back-button {
   .other-auth-options-row {
     justify-content: space-between;
     align-items: center;
-  }
-
-  .social-auth-options {
-    .social-auth-btn {
-      margin: 0px;
-
-      &:not(:first-child) {
-        margin-top: var(--page-margin);
-      }
-    }
-  }
-}
-
-.social-auth-btn {
-  margin: 0px;
-
-  &:not(:first-child) {
-    margin-top: var(--page-margin);
   }
 }
 
