@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
-
+import { ComponentsModule } from '../components/components.module';
 import { GettingStartedPageRoutingModule } from './getting-started-routing.module';
 
 import { GettingStartedPage } from './getting-started.page';
@@ -12,8 +12,10 @@ import { GettingStartedPage } from './getting-started.page';
   imports: [
     CommonModule,
     FormsModule,
+    ReactiveFormsModule,
     IonicModule,
-    GettingStartedPageRoutingModule
+    GettingStartedPageRoutingModule,
+    ComponentsModule
   ],
   declarations: [GettingStartedPage]
 })
